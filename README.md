@@ -1,2 +1,1 @@
-# AWS-chat
-Practice with AWS
+AWS session 1
