@@ -10,45 +10,41 @@
         crossorigin="anonymous"></script>    
 </head>
 <body>
-
-    <h2>AWS session 1</h2>
-
     <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                column 1
+        <h2>AWS session 1</h2>
+        <!--div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    column 1
+                </div>
+                <div class="col-sm">
+                    column 2
+                </div>
+                <div clas="col-sm">
+                    column 3
+                </div>
             </div>
-            <div class="col-sm">
-                column 2
-            </div>
-            <div clas="col-sm">
-                column 3
-            </div>
+        </div>-->
+
+        <div>
+            <button id="loadDataButton" onclick="loadData()">Load data</button>
         </div>
+        <div>
+            Result: 
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>id</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
     </div>
-
-    <div>
-        <button onclick="loadData()">Load data</button>
-
-    </div>
-
-
-    <div>
-        Result: 
-
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>ID</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>id</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-
 </body>
 </html>
