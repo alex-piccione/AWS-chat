@@ -6,7 +6,14 @@ function loadData() {
    //ajax()
     console.info("start loadData")
 
+    $("#loadDataButton").attr("disabled", "");
     
+    $.get(dataUrl, 
+        (data) => alert("success"),
+        (error) => alert(error) 
+        )
 
     console.info("end loadData")
+
+    $("#loadDataButton").removeAttr("disabled");
 }
