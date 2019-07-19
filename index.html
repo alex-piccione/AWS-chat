@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>AWS session 1</title>
+    <title>AWS chat</title>
     <link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css"><link>
     <script src="js/main.js"></script>
@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container">
-        <h2>AWS session 1</h2>
+        <h2>AWS data</h2>
         <!--div class="container">
             <div class="row">
                 <div class="col-sm">
@@ -27,19 +27,26 @@
         </div>-->
 
         <div>
-            <button id="loadDataButton" onclick="loadData()">Load data</button>
+            <button id="loadDataButton" onclick="loadData()" class="btn btn-primary">Load data</button>
         </div>
-        <div>
-            Result: 
-            <table class="table table-striped">
+
+        <div id="errorMessage" class="alert alert-danger" style="display: none; margin-top: 10px"></div>
+        
+        <hr>
+
+        <div id="dataEmpty" class="alert alert-secondary">No data to display</div>
+        <div id="dataTable" style="display: none">          
+            <table class="table table-striped table-sm table-hover">
                 <thead>
                     <tr>
                         <th>ID</th>
+                        <th>Email</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td>id</td>
+                        <td>email</td>
                     </tr>
                 </tbody>
             </table>
