@@ -26,12 +26,7 @@ function loadPets() {
     
     clearError()
 
-    //const headers: {'Access-Control-Allow-Origin': 'htt://site allowed to access' },
-    const headers = {'Access-Control-Allow-Origin': '*' }
-
-    $.ajaxSetup({headers: headers})
-
-    $.get(dataUrl, {headers: {'Access-Control-Allow-Origin': '*' }} ,
+    $.get(dataUrl,
         (data, status, xhr) => {
             clearError()
             $("#dataTable").css("display", "")
