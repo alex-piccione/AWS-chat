@@ -1,11 +1,12 @@
 //const dataUrl = "https://codersuk-test.s3-eu-west-1.amazonaws.com/data.json"
 dataUrl = "https://7iv0c9qr3l.execute-api.us-east-1.amazonaws.com/new/pets"
-
+dataUrl = "https://js5rsci486.execute-api.us-east-1.amazonaws.com/default/listPets"
 //let ajax = () => new XMLHttpRequest()
 
 let isLoading = false
 
 var __debug
+var __error
 
 function showError(error) {
     document.getElementById("errorMessage").innerHTML = error
@@ -25,7 +26,12 @@ function loadPets() {
     
     clearError()
 
-    $.get(dataUrl, 
+    //const headers: {'Access-Control-Allow-Origin': 'htt://site allowed to access' },
+    const headers = {'Access-Control-Allow-Origin': '*' }
+
+    $.ajaxSetup({headers: headers})
+
+    $.get(dataUrl, {headers: {'Access-Control-Allow-Origin': '*' }} ,
         (data, status, xhr) => {
             clearError()
             $("#dataTable").css("display", "")
@@ -34,7 +40,8 @@ function loadPets() {
             showPets(data)
         })
         .fail( (xhr, error) => { 
-            showError("Failed to load pets. " + xhr.statusText)
+            __error = error
+            showError("Failed to load pets. " + xhr.statusText + " " + String(error))
             //alert("fail: " + xhr.statusText) /* + (error.message | String(error)) ); __debug = error */ 
         }) 
         .always( () => {
