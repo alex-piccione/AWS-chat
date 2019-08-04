@@ -3,3 +3,15 @@ body {
     background-color: #f0f0f0;
     color: #333;
 }
+
+
+tr.deleted {    
+    animation: trdeleted .5s;
+ }
+
+
+@keyframes trdeleted {      
+    0% { color: gray !important; background-color: rgba(255, 50, 50, .7) !important; }
+    50% { color: gray !important; background-color: inherit }   
+}
+

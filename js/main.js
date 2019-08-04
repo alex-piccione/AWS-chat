@@ -19,11 +19,8 @@ let clearError = () => document.getElementById("errorMessage").style.display = "
 function loadPets() {
     if(isLoading) return alert("A previous request is still running")
     isLoading = true
-
     console.info("start loadPets")
-
-    $("#loadDataButton").attr("disabled", "");
-    
+    $("#loadDataButton").attr("disabled", "");    
     clearError()
 
     $.get(dataUrl,
@@ -47,10 +44,23 @@ function loadPets() {
     console.info("end loadPets")
 }
 
+let c = 1
+
 function showPets(data) {
     console.info("showPets")
     __debug = data
     
+    // cleanup existing rows
+    let tbody = $("#dataTable tbody")[0]
+    //tbody.innerHTML = ""    
+
+    // nice effect of cleanup
+    for(var i=0; i<tbody.rows.length; i++) {
+        let row = tbody.rows[i]
+        row.setAttribute("class", "deleted") 
+        setTimeout(function() { row.remove(); }, 150*i)
+    }
+
     // parse the JSON into objects
     let pets = []
 
@@ -65,13 +75,12 @@ function showPets(data) {
     //debugger;
     // populate the table
     $("#dataTable").css("display", "") // temp
-    let tbody = $("#dataTable tbody")
-    tbody.empty();
-    let table = $("#dataTable table")[0] 
-    
+
+
     pets.forEach(pet => {
-        let row = table.insertRow(-1)
-        let cell = row.insertCell(0).innerText = pet.id
+        let row = tbody.insertRow(-1)
+        //row.setAttribute("class", "deleted") 
+        row.insertCell(0).innerText = pet.id
         row.insertCell(1).innerText = pet.type
         row.insertCell(2).innerText = pet.price
     });
