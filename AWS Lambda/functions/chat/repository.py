@@ -2,6 +2,10 @@ import uuid
 
 # move into messages_repository
 
+
+# dynamo DB tutorial
+# https://aws.amazon.com/getting-started/tutorials/create-nosql-table/?trk=gs_card
+
 def list():
 
     messages = []

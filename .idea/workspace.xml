@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="134e8757-7485-421a-9dc4-242e3fb0af62" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AWS Lambda/functions/chat/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS Lambda/functions/chat/common.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AWS Lambda/functions/chat/repository.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS Lambda/AWS Lambda tips.md" beforeDir="false" afterPath="$PROJECT_DIR$/AWS Lambda/AWS Lambda tips.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS Lambda/functions/chat_messages_create.py" beforeDir="false" afterPath="$PROJECT_DIR$/AWS Lambda/functions/chat_messages_create.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS Lambda/functions/chat_messages_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/AWS Lambda/functions/chat_messages_list.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AWS Lambda/layers/chat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AWS Lambda/functions/chat/repository.py" beforeDir="false" afterPath="$PROJECT_DIR$/AWS Lambda/functions/chat/repository.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AWS Lambda/layers/chat.zip" beforeDir="false" afterPath="$PROJECT_DIR$/AWS Lambda/layers/chat.zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/entities.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/entities.js" afterDir="false" />
     </list>
@@ -33,11 +26,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/AWS Lambda/layers/python/lib/python3.7/site-packages/chat/repository.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="289">
               <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AWS Lambda/functions/chat/repository.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -79,6 +81,7 @@
         <option value="$PROJECT_DIR$/AWS Lambda/functions/__init__.py" />
         <option value="$PROJECT_DIR$/AWS Lambda/functions/chat_messages_list.py" />
         <option value="$PROJECT_DIR$/AWS Lambda/layers/python/lib/python3.7/site-packages/chat/repository.py" />
+        <option value="$PROJECT_DIR$/AWS Lambda/functions/chat/repository.py" />
       </list>
     </option>
   </component>
@@ -350,6 +353,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AWS Lambda/functions/chat/repository.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="21" lean-forward="true" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
         </state>
       </provider>
     </entry>
