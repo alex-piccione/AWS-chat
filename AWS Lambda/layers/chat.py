@@ -6,3 +6,6 @@ def error(error_reason):
         "statusReason": error_reason
     }
 
+
+def test_2():
+    return 2
