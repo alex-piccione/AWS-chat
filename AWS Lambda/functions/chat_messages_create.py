@@ -4,9 +4,9 @@ import uuid
 def lambda_handler(event, context):
 
     # validate
-    if (isinstance(event.body.message, str) == false):
+    #if (isinstance(event.body.message, str) == false):
 
-    if (event.body.messages)
+    #if (event.body.messages)
 
 
     # decode
