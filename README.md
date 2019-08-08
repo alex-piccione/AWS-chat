@@ -1,6 +1,7 @@
 AWS Chat
 
-http://alex75-bucket-1.s3-website.eu-west-2.amazonaws.com/
+http://chat.alex75.it.s3-website.eu-central-1.amazonaws.com/
+https://chat.alex75.it redirect to the bucket
 
 # AWS S3 web site
 
