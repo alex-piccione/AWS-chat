@@ -1,5 +1,6 @@
 import json
 import uuid
+import chat.repository
 
 def lambda_handler(event, context):
 
@@ -10,10 +11,17 @@ def lambda_handler(event, context):
 
 
     # decode
-    messages = json.loads(event.body.message)
+    message = json.loads(event.body.message)
 
     #  store
     new_id = uuid.uuid4()  # create a random ID not related to the
+
+    #try:
+        chat.repository.save(message)
+    #except error as e:
+    #    return chat.common.error()
+    dynamoClient = boto3.client("dynamodb")
+
 
     body = {
         "id": new_id,

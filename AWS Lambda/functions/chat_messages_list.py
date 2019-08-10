@@ -1,7 +1,6 @@
 import json
 import chat.repository
 
-
 def lambda_handler(event, context):
 
     messages = chat.repository.list()
@@ -19,7 +18,7 @@ def lambda_handler(event, context):
         "body": json.dumps(messages)
     }
 
-def __test():
-
+# def __test():
+    
 
     

@@ -20,51 +20,53 @@
         <div class=" navbar-collapse">
             <a href="accounts.html">Accounts</a>
         </div>  
+        <li></li>
     </div>
 </nav>
 
-
 <div class="container">
-        <h2>AWS data</h2>
-        <!--div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    column 1
-                </div>
-                <div class="col-sm">
-                    column 2
-                </div>
-                <div clas="col-sm">
-                    column 3
-                </div>
+    <h2>AWS data</h2>
+    <!--div class="container">
+        <div class="row">
+            <div class="col-sm">
+                column 1
             </div>
-        </div>-->
-
-        <div>
-            <button id="loadDataButton" onclick="loadPets()" class="btn btn-primary">show pets</button>
+            <div class="col-sm">
+                column 2
+            </div>
+            <div clas="col-sm">
+                column 3
+            </div>
         </div>
+    </div>-->
 
-        <div id="errorMessage" class="alert alert-danger" style="display: none; margin-top: 10px"></div>
-        
-        <hr>
-
-        <div id="dataEmpty" class="alert alert-secondary">No data to display</div>
-        <div id="dataTable" style="display: none">          
-            <table class="table table-striped table-sm table-hover">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Type</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-           
-                </tbody>
-            </table>
-        </div>
-
+    <div>
+        <button id="loadDataButton" onclick="loadPets()" class="btn btn-primary">show pets</button>
     </div>
-    <script>loadPets()</script>
+
+    <div id="errorMessage" class="alert alert-danger" style="display: none; margin-top: 10px"></div>
+    
+    <hr>
+
+    <div id="dataEmpty" class="alert alert-secondary">No data to display</div>
+    <div id="dataTable" style="display: none">          
+        <table class="table table-striped table-sm table-hover">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Type</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+        
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+<script>loadPets()</script>
+
 </body>
 </html>
